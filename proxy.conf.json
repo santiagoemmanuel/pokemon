@@ -1,6 +1,0 @@
-{
-    "/ws": {
-      "target": "http://localhost:8091/svfac",
-      "secure": false      
-    }
-  }
