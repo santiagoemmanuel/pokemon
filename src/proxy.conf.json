@@ -1,0 +1,8 @@
+{
+    "/ws/*": {
+      "target": "http://localhost:8091/svfac",
+      "logLevel": "debug",
+      "changeOrigin": true,
+      "secure": false      
+    }
+  }

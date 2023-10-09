@@ -1,0 +1,53 @@
+.card-izquierda {
+    max-width: 80%;    
+  }
+
+  .card-derecha {
+    max-width: 85%;       
+  }
+
+
+    
+  .rounded-image {
+    border-radius: 50%;
+    width: 210px;
+    height: 220px;
+    border-color: antiquewhite;
+    border-style: outset;
+    border-width: 10px;
+  }
+
+
+
+
+  .default-background {
+    background-image: url('/assets/verde.png'); /* imagen de fondo Pokémon verde */
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .file-upload {
+    position: relative;
+  }
+  
+  .file-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .material-icons {
+    margin-right: 8px;
+    font-size: 24px;
+  }
+  
+  .file-name {
+    display: none; /* Oculta el nombre del archivo */
+  }
+
+  .colorAzul{
+    color: royalblue;
+    font-weight: bold  
+  }
+                

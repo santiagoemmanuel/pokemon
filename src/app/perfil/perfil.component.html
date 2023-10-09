@@ -1,0 +1,47 @@
+<mat-card class="card-izquierda default-background" style="width: 100%;">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{dataFromParent.nombre}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+
+      <div>
+        <br>
+        <h2> </h2>
+
+        <div>
+          <img [src]="dataFromParent.imagenUrl || '/assets/default-user.jpg'" alt="Foto de perfil" class="rounded-image">
+        </div>
+
+      </div>
+      <div *ngIf="dataFromParent.etapa==1">
+        <br><br><br>
+      </div>
+      <div *ngIf="dataFromParent.etapa>=2">
+        Pasatiempo:{{dataFromParent.pasatiempo}}
+        <br>
+        Edad: {{dataFromParent.edad}}
+        <br>
+        Dui: {{dataFromParent.documento}}
+        <br>
+      </div>
+
+    </mat-card-content>
+    <mat-card-actions>
+      <div class="file-upload " style="background-color: antiquewhite;" *ngIf="dataFromParent.etapa!=2">
+        <input hidden class="btn btn-primary" type="file" id="inputFile" (change)="cargarImagen($event)"
+          value="seleccionar">
+        <label for="inputFile" class="file-label">
+          <span class="material-icons colorAzul">cloud_upload</span>
+          Adjuntar imagen
+        </label>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+
+  <!--
+<pre>
+{{
+    dataFromParent | json
+}}
+</pre> -->
